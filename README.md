@@ -40,7 +40,7 @@ You need to add the Heroku application as a github "remote" for your application
 ```
 heroku git:remote -a <application-name> 
 ```
-Where <application-name> is the 'dev' or 'ci' version, ie: gb-pipeline-app-cifomr the demo
+Where application-name is the 'dev' or 'ci' version, ie: gb-pipeline-app-cifomr the demo
 
 ## Chekc for environment parity
 
