@@ -41,6 +41,14 @@ You need to add the Heroku application as a github "remote" for your application
 heroku git:remote -a <application-name>
 ```
 
+## Chekc for environment parity
+
+You should be able to start the app by running 
+
+```heroku local```
+
+in the application repository
+
 you can now push your application to thre "CI" stage of the pipeline with ```git push heroku master```
 
 # BONUS / EXRTA
