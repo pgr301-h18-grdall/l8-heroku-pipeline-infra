@@ -18,7 +18,7 @@ NB! Please note that you need to unset the Heroku API Key environment if you wan
 
 ## Use Terraform to create the pipeline 
 
-Copy the repositories
+Clone  the repositories, make your own - and copy the contents - as usual 
 
 - https://github.com/PGR301-2018/heroku-pipeline-infra
 - https://github.com/PGR301-2018/heroku-pipeline-app
