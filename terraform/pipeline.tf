@@ -14,8 +14,8 @@ resource "heroku_app" "production" {
   region = "eu"
 }
 
-  name  = "${var.pipeline_name}"
-  owner = "glennbech"
+resource "heroku_pipeline" "test-app" {
+  name = "${var.pipeline_name}"
 }
 
 # Couple apps to different pipeline stages
