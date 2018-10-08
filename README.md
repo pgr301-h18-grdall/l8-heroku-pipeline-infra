@@ -38,8 +38,9 @@ You need to add the Heroku application as a github "remote" for your application
 - Navigate to the directory of the application
 - Run the command 
 ```
-heroku git:remote -a <application-name>
+heroku git:remote -a <application-name> 
 ```
+Where <application-name> is the 'dev' or 'ci' version, ie: gb-pipeline-app-cifomr the demo
 
 ## Chekc for environment parity
 
