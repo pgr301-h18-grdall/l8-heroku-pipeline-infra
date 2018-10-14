@@ -1,5 +1,4 @@
 jobs:
-
 # Replace params / app_name with your heroku app name
 - name: ci
   plan:
@@ -9,7 +8,7 @@ jobs:
     - get: heroku-pipeline-infra
       trigger: true
   - task: sync_heroku
-    file: heroku-example/concourse/heroku/heroku_sync.yml
+    file: heroku-pipeline-infra/concourse/heroku/heroku_sync.yml
     input_mapping: {source: heroku-pipeline-app}
     params:
       app_name: gb-pipeline-app-ci
@@ -22,7 +21,7 @@ jobs:
     - get: heroku-pipeline-infra
       trigger: true
   - task: apply
-    file: heroku-example/concourse/tasks/terraform/task.yml
+    file: heroku-pipeline-infra/concourse/tasks/terraform/task.yml
     input_mapping: {source: heroku-pipeline-infra}
     params:
       github_token: ((github_token))
