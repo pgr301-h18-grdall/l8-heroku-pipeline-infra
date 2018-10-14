@@ -1,4 +1,5 @@
 # Lesson 7
+
 In this lesson we will look at how we can use Heroku to achieve our gaols of immutable artifacts,
 environment parity and consistent builds.
 
