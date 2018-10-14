@@ -1,11 +1,12 @@
 # Lesson 7
 
+
 In this lesson we will look at how we can use Heroku to achieve our gaols of immutable artifacts,
 environment parity and consistent builds.
 
 You can use this repository as a starting point.
 
-## Setup your environment
+# Setup your environment
 
 Set the two required environment variables in your shell
 
