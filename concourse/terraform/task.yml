@@ -23,10 +23,8 @@ params:
   github_token: ((github_token))
 
 run:
-  path: bash
+  path: sh
   args:
   - -exc
   - |
-    whoami
-    env
     ls
