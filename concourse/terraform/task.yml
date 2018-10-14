@@ -23,4 +23,10 @@ params:
   github_token: ((github_token))
 
 run:
-  path: source/concourse/terraform/terraform.sh
+  path: sh
+  args:
+  - -exc
+  - |
+    whoami
+    env
+    ls

@@ -36,7 +36,6 @@ jobs:
       repository: with-state
       rebase: true
 
-
 resources:
 
 # Replace with your own repository
