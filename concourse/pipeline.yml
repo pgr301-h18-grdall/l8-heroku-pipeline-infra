@@ -6,12 +6,11 @@ jobs:
     - get: heroku-pipeline-app
       trigger: true
     - get: heroku-pipeline-infra
-      trigger: true
   - task: sync_heroku
     file: heroku-pipeline-infra/concourse/heroku/heroku_sync.yml
     input_mapping: {source: heroku-pipeline-app}
     params:
-      app_name: gb-pipeline-app-ci
+      app_name: ((heroku_app_name))
       heroku_email: ((heroku_email))
       heroku_api_token: ((heroku_api_key))
 
