@@ -5,15 +5,38 @@ jobs:
   plan:
   - aggregate:
     - get: heroku-pipeline-app
+      trigger: true
     - get: heroku-pipeline-infra
       trigger: true
   - task: sync_heroku
-    file: heroku-example/concourse/heroku_sync.yml
+    file: heroku-example/concourse/heroku/heroku_sync.yml
     input_mapping: {source: heroku-pipeline-app}
     params:
       app_name: gb-pipeline-app-ci
       heroku_email: ((heroku_email))
       heroku_api_token: ((heroku_api_key))
+
+- name: infra
+  plan:
+  - aggregate:
+    - get: heroku-pipeline-infra
+      trigger: true
+  - task: apply
+    file: heroku-example/concourse/tasks/terraform/task.yml
+    input_mapping: {source: heroku-pipeline-infra}
+    params:
+      github_token: ((github_token))
+      command: apply
+      directories: |
+          .
+#  The with-state is an output from the apply task. It's a git repo with
+#  An updated terraform tfstate file.
+
+  - put: heroku-pipeline-infra
+    params:
+      repository: with-state
+      rebase: true
+
 
 resources:
 
