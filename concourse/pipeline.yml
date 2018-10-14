@@ -21,7 +21,7 @@ jobs:
     - get: heroku-pipeline-infra
       trigger: true
   - task: apply
-    file: heroku-pipeline-infra/concourse/tasks/terraform/task.yml
+    file: heroku-pipeline-infra/concourse/terraform/task.yml
     input_mapping: {source: heroku-pipeline-infra}
     params:
       github_token: ((github_token))
