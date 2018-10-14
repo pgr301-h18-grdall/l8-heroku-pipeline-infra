@@ -25,6 +25,7 @@ jobs:
     input_mapping: {source: heroku-pipeline-infra}
     params:
       github_token: ((github_token))
+      heroku_api_key: ((heroku_api_key))
       command: apply
       directories: |
           terraform
