@@ -12,9 +12,6 @@ inputs:
 outputs:
 - name: with-state
 
-caches:
-- path: terraform-cache
-
 params:
   command:
   directories:
@@ -23,8 +20,4 @@ params:
   github_token: ((github_token))
 
 run:
-  path: sh
-  args:
-  - -exc
-  - |
-    ls
+  path: ls
