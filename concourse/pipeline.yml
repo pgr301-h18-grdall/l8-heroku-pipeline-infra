@@ -28,6 +28,7 @@ jobs:
       command: apply
       directories: |
           terraform
+
 #  The with-state is an output from the apply task. It's a git repo with
 #  An updated terraform tfstate file.
 
