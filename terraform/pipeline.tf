@@ -26,6 +26,12 @@ resource "heroku_app" "production" {
   region = "eu"
 }
 
+# Create a database, and configure the app to use it
+resource "heroku_addon" "db_prod" {
+  app  = "${heroku_app.production.name}"
+  plan = "heroku-postgresql:hobby-dev"
+}
+
 resource "heroku_pipeline" "test-app" {
   name = "${var.pipeline_name}"
 }
