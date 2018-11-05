@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c5cc96b-a032-4384-9d99-d691c1f3e0c8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/credentials.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credentials.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/variables.tf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,11 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terraform/variables.tf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="terraform.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/concourse/terraform/terraform.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
             </state>
           </provider>
         </entry>
@@ -87,6 +95,7 @@
         <option value="$PROJECT_DIR$/credentials.yml" />
         <option value="$PROJECT_DIR$/concourse/heroku/heroku_sync.yml" />
         <option value="$PROJECT_DIR$/terraform/variables.tf" />
+        <option value="$PROJECT_DIR$/concourse/terraform/terraform.sh" />
       </list>
     </option>
   </component>
@@ -126,6 +135,12 @@
               <item name="l8-heroku-pipeline-infra" type="462c0819:PsiDirectoryNode" />
               <item name="concourse" type="462c0819:PsiDirectoryNode" />
               <item name="heroku" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="l8-heroku-pipeline-infra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="l8-heroku-pipeline-infra" type="462c0819:PsiDirectoryNode" />
+              <item name="concourse" type="462c0819:PsiDirectoryNode" />
+              <item name="terraform" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="l8-heroku-pipeline-infra" type="b2602c69:ProjectViewProjectNode" />
@@ -228,12 +243,12 @@
       <workItem from="1540201159121" duration="1709000" />
       <workItem from="1540286425840" duration="2638000" />
       <workItem from="1541416166460" duration="3443000" />
-      <workItem from="1541437020390" duration="1164000" />
+      <workItem from="1541437020390" duration="1298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11679000" />
+    <option name="totallyTimeSpent" value="11813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1233" height="735" extended-state="6" />
@@ -492,6 +507,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concourse/terraform/terraform.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
         </state>
       </provider>
     </entry>
