@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c5cc96b-a032-4384-9d99-d691c1f3e0c8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concourse/heroku/heroku_sync.yml" beforeDir="false" afterPath="$PROJECT_DIR$/concourse/heroku/heroku_sync.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credentials.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credentials.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,7 +96,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="849" />
     <option name="y" value="21" />
     <option name="width" value="936" />
@@ -229,12 +228,12 @@
       <workItem from="1540201159121" duration="1709000" />
       <workItem from="1540286425840" duration="2638000" />
       <workItem from="1541416166460" duration="3443000" />
-      <workItem from="1541437020390" duration="297000" />
+      <workItem from="1541437020390" duration="552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10812000" />
+    <option name="totallyTimeSpent" value="11067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1233" height="735" extended-state="6" />
@@ -485,6 +484,9 @@
           <caret line="108" column="54" lean-forward="true" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="54" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/terraform.tfstate">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/concourse/heroku/heroku_sync.yml">
       <provider selected="true" editor-type-id="text-editor">
