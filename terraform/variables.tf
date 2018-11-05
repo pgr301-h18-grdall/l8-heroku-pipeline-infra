@@ -5,5 +5,5 @@ variable "app_prefix" {
 }
 
 variable "pipeline_name" {
-  default = "pgr301-pipeline-lesson8"
+  default = "l8pgr301"
 }
